@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "appId": null,
+  "appDisplayName": "Hello Code Apps",
+  "region": "prod",
+  "environmentId": "Default-a5d6d2a6-a034-4767-b0c3-5c2ddc131138",
+  "description": "",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "localAppUrl": "http://localhost:3000",
+  "logoPath": "Default",
+  "connectionReferences": {
+    "16d17198-dd23-4318-b929-2de2eb180086": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+      "displayName": "SharePoint",
+      "dataSources": [
+        "invoiceslist"
+      ],
+      "dataSets": {
+        "https://swami01.sharepoint.com/sites/PowerAppsEducation": {
+          "dataSources": {
+            "invoiceslist": {
+              "tableName": "a2280f7e-5e93-43ab-99af-f87eef02aafc"
+            }
+          }
+        }
+      }
+    },
+    "78da170a-2f40-45ad-93f8-fafe71afa9d2": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_office365users",
+      "displayName": "Office 365 Users",
+      "dataSources": [
+        "office365users"
+      ],
+      "dataSets": {}
+    }
+  },
+  "databaseReferences": {}
+}

@@ -1,0 +1,154 @@
+body {
+  background-color: #f3f2f1;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #323130;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.app {
+  box-sizing: border-box;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px 48px;
+}
+
+/* ── Page header ──────────────────────────────────── */
+.page-header {
+  padding: 32px 0 24px;
+  border-bottom: 2px solid #0078d4;
+  margin-bottom: 32px;
+}
+
+.page-title {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0078d4;
+}
+
+.page-subtitle {
+  margin: 0;
+  color: #605e5c;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ── Section ──────────────────────────────────────── */
+.section {
+  padding: 28px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.section-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  background-color: #0078d4;
+  color: #ffffff;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.section-desc {
+  color: #605e5c;
+  margin-top: 4px;
+  display: block;
+}
+
+.hint-text {
+  color: #a4262c;
+}
+
+/* ── Profile / Manager card ───────────────────────── */
+.card {
+  background: #ffffff;
+  border: 1px solid #edebe9;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 560px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0078d4;
+  margin-bottom: 16px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid #edebe9;
+  padding-top: 16px;
+}
+
+.field-row {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+  align-items: baseline;
+}
+
+.field-label {
+  font-weight: 600;
+  color: #605e5c;
+  min-width: 130px;
+  flex-shrink: 0;
+}
+
+.field-label::after {
+  content: ":";
+}
+
+.field-value {
+  color: #323130;
+  word-break: break-all;
+}
+
+/* ── Search results ───────────────────────────────── */
+.search-results {
+  background: #ffffff;
+  border: 1px solid #edebe9;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  width: auto;
+}
+
+.results-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #323130;
+}
+
+code {
+  background: #f3f2f1;
+  border: 1px solid #edebe9;
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 13px;
+  font-family: "Cascadia Code", "Consolas", monospace;
+  color: #a4262c;
+}
