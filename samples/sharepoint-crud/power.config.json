@@ -1,0 +1,52 @@
+{
+  "version": "1.0",
+  "appId": null,
+  "appDisplayName": "Hello World ",
+  "region": "prod",
+  "environmentId": "Default-a5d6d2a6-a034-4767-b0c3-5c2ddc131138",
+  "description": "",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "localAppUrl": "http://localhost:3000",
+  "logoPath": "Default",
+  "connectionReferences": {
+    "b6865443-4d88-4b8a-b08c-773769f6df88": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+      "displayName": "SharePoint",
+      "dataSources": [
+        "invoices list",
+        "invoiceslist",
+        "sharepointonline"
+      ],
+      "dataSets": {
+        "https%3A%2F%2Fswami01.sharepoint.com%2Fsites%2FPowerAppsEducation": {
+          "dataSources": {
+            "invoices list": {
+              "tableName": "a2280f7e-5e93-43ab-99af-f87eef02aafc"
+            },
+            "invoiceslist": {
+              "tableName": "a2280f7e-5e93-43ab-99af-f87eef02aafc"
+            }
+          }
+        }
+      }
+    },
+    "2776e0c1-5281-4ea9-931c-25b61a33275d": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_office365users",
+      "displayName": "Office 365 Users",
+      "dataSources": [
+        "office365users"
+      ],
+      "dataSets": {}
+    },
+    "248cee33-7b81-4693-932a-910eb870a0bd": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_approvals",
+      "displayName": "Standard approvals",
+      "dataSources": [
+        "approvals"
+      ],
+      "dataSets": {}
+    }
+  },
+  "databaseReferences": {}
+}
