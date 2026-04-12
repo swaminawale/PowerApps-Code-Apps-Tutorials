@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "appId": null,
+  "appDisplayName": "CodeApps - Copilot Studio Connector",
+  "region": "prod",
+  "environmentId": "Default-605c73a9-aa0c-436a-874e-3f6e890fe373",
+  "description": "",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "localAppUrl": "http://localhost:3000",
+  "logoPath": "Default",
+  "connectionReferences": {
+    "25716633-c9d5-4f79-856e-beec9c11ad03": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_microsoftcopilotstudio",
+      "displayName": "Microsoft Copilot Studio",
+      "dataSources": [
+        "microsoftcopilotstudio"
+      ],
+      "dataSets": {}
+    }
+  },
+  "databaseReferences": {}
+}
