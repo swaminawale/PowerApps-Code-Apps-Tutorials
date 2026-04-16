@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "appId": null,
+  "appDisplayName": "SharePoint List Attachments",
+  "region": "prod",
+  "environmentId": "Default-a5d6d2a6-a034-4767-b0c3-5c2ddc131138",
+  "description": "",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "localAppUrl": "http://localhost:3000",
+  "logoPath": "Default",
+  "connectionReferences": {
+    "acfabc17-18d2-4220-99ca-4ab5281783ec": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+      "displayName": "SharePoint",
+      "dataSources": [
+        "sharepointonline"
+      ],
+      "dataSets": {}
+    }
+  },
+  "databaseReferences": {}
+}

@@ -1,0 +1,124 @@
+.app-shell {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.error-banner {
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.35rem;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  font-size: 0.9rem;
+}
+
+.controls {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: end;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid #dbe1ea;
+  border-radius: 0.35rem;
+  background: #fff;
+}
+
+button {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #dbe1ea;
+  border-radius: 0.35rem;
+  background: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.status {
+  min-height: 1.5rem;
+  margin-top: 0.6rem;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+table {
+  margin-top: 0.6rem;
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.attachment-card {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #dbe1ea;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+.helper-text {
+  margin-top: 0.5rem;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.info-banner {
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.35rem;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1d4ed8;
+  font-size: 0.9rem;
+}
+
+.attachment-config,
+.selected-files {
+  margin-top: 1rem;
+}
+
+.selected-files ul {
+  padding-left: 1.2rem;
+}
+
+.attachment-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 850px) {
+  .controls {
+    grid-template-columns: 1fr;
+  }
+}
