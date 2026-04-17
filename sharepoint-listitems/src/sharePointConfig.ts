@@ -4,8 +4,8 @@ export const sharePointConfig = {
   newItemTitle: "Hello there",
   attachments: {
     allowMultiple: true,
-    acceptedFileTypes: ".png,.jpg,.jpeg,.pdf,.txt",
-    maxFileSizeMb: 5,
+    acceptedFileTypes: "*",
+    maxFileSizeMb: 25,
   },
 } as const;
 

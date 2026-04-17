@@ -101,6 +101,46 @@ table {
   padding-left: 1.2rem;
 }
 
+.progress-text {
+  margin-top: 0.6rem;
+  color: #854d0e;
+  font-size: 0.92rem;
+}
+
+.loading-pulse {
+  animation: loadingPulse 1.2s ease-in-out infinite;
+}
+
+.file-progress-row {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.progress-dot {
+  width: 0.62rem;
+  height: 0.62rem;
+  border-radius: 999px;
+  border: 1px solid #94a3b8;
+  flex: 0 0 0.62rem;
+}
+
+.status-not-started {
+  background: #cbd5e1;
+  border-color: #94a3b8;
+}
+
+.status-in-progress {
+  background: #facc15;
+  border-color: #ca8a04;
+  animation: dotBlink 1s ease-in-out infinite;
+}
+
+.status-done {
+  background: #22c55e;
+  border-color: #15803d;
+}
+
 .attachment-row {
   display: flex;
   align-items: center;
@@ -120,5 +160,32 @@ td {
 @media (max-width: 850px) {
   .controls {
     grid-template-columns: 1fr;
+  }
+}
+
+@keyframes loadingPulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes dotBlink {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.7;
   }
 }
