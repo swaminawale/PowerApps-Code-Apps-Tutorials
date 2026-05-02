@@ -1,0 +1,32 @@
+{
+  "appId": "804f4fa8-8d15-45cd-a3f4-ee4fb92eb663",
+  "appDisplayName": "App From Scratch 3",
+  "description": "",
+  "environmentId": "Default-a5d6d2a6-a034-4767-b0c3-5c2ddc131138",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "logoPath": "Default",
+  "localAppUrl": "http://localhost:3000",
+  "region": "prod",
+  "connectionReferences": {
+    "80339c5b-0752-42d2-ac77-137ae67d44f6": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+      "displayName": "SharePoint",
+      "dataSources": [
+        "employee database"
+      ],
+      "authenticationType": null,
+      "sharedConnectionId": null,
+      "dataSets": {
+        "https%253A%252F%252Fswami01.sharepoint.com%252Fsites%252FPlayground": {
+          "dataSources": {
+            "employee database": {
+              "tableName": "f1c71037-52c4-435b-afdb-f3e4fd3a2a72"
+            }
+          }
+        }
+      }
+    }
+  },
+  "databaseReferences": {}
+}
