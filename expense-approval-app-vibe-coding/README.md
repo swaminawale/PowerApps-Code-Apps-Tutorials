@@ -1,6 +1,34 @@
-# PACA Approval System
+# Expense Approval System
 
 A Power Apps Code App (React + TypeScript + Vite) for managing expense reimbursement approvals via SharePoint and Outlook.
+
+---
+
+## ⚠️ Important :Read Before Using
+
+### Source Code Only :No Dependencies Included
+
+**This repository contains only the source code.** Node modules, build artifacts, and Power Apps package files are intentionally excluded to avoid environment conflicts.
+
+To use this project, you must:
+
+1. **Create a new Power Apps Code App project from scratch** using the PAC CLI:
+   ```
+   pac code init --language TypeScript
+   ```
+2. **Add the required data sources** :see [Data Sources & Connectors](#data-sources--connectors) below.
+3. **Copy the source files and folder structure** from this repository into your newly created project.
+
+> This ensures your local environment settings and connection IDs do not conflict with the original developer's setup.
+
+---
+
+### 🤖 Developed Using GitHub Copilot and Vibe Coding
+
+This project was built with the assistance of **GitHub Copilot** and **Vibe Coding** techniques.
+
+> **Warning:** Always review and fully understand every line of code before deploying to production.
+> Do **not** rely solely on AI-generated or vibe-coded output, cross-check the logic, validate behaviour, and ensure the code meets your requirements.
 
 ---
 
@@ -9,16 +37,16 @@ A Power Apps Code App (React + TypeScript + Vite) for managing expense reimburse
 **List:** `Expense Reimbursement`
 **Site:** `https://<YOUR_TENANT>.sharepoint.com/sites/<YOUR_SITE>/Lists/Expense%20Reimbursement/AllItems.aspx`
 
-| Column | Type | Options / Notes |
-|---|---|---|
-| Title | Single line of text | |
-| Detail | Single line of text | |
-| Expense Date | Date and Time | |
-| Amount | Number | |
-| Approval Status | Choice | `Auto approved`, `Approved`, `Pending`, `Rejected` |
-| Approver Comment | Single line of text | |
-| Approver | Person or Group | |
-| Category | Choice | `Travel`, `Meals & Entertainment`, `Office & Supplies`, `Technology & Software`, `Client & Business Development`, `Health & Wellness`, `Miscellaneous` |
+| Column           | Type                | Options / Notes                                                                                                                                        |
+| ---------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Title            | Single line of text |                                                                                                                                                        |
+| Detail           | Single line of text |                                                                                                                                                        |
+| Expense Date     | Date and Time       |                                                                                                                                                        |
+| Amount           | Number              |                                                                                                                                                        |
+| Approval Status  | Choice              | `Auto approved`, `Approved`, `Pending`, `Rejected`                                                                                                     |
+| Approver Comment | Single line of text |                                                                                                                                                        |
+| Approver         | Person or Group     |                                                                                                                                                        |
+| Category         | Choice              | `Travel`, `Meals & Entertainment`, `Office & Supplies`, `Technology & Software`, `Client & Business Development`, `Health & Wellness`, `Miscellaneous` |
 
 ---
 
@@ -71,61 +99,10 @@ npm run dev
 npm run build
 ```
 
----
-
-## ESLint Configuration
-
-For production apps, enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      tseslint.configs.recommendedTypeChecked,
-      // or for stricter rules:
-      tseslint.configs.strictTypeChecked,
-      tseslint.configs.stylisticTypeChecked,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-    },
-  },
-])
-```
-
-You can also add [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom):
-
-```js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      reactX.configs['recommended-typescript'],
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-    },
-  },
-])
-```
-
 ### Vite Plugins
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) — uses Babel (or oxc via rolldown-vite) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) — uses SWC for Fast Refresh
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) :uses Babel (or oxc via rolldown-vite) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) :uses SWC for Fast Refresh
 
 ### React Compiler
 
